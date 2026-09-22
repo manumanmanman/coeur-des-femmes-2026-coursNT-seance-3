@@ -1,0 +1,71 @@
+:root {
+  /* Couleurs relevees dans la maquette */
+  --c-rouge:   #e8232a;
+  --c-rose:    #f8b9cd;
+  --c-bleu:    #3a6fb0;
+  --c-jaune:   #ecec9e;
+  --c-noir:    #1a1a1a;
+
+  /* Typographie */
+  --f-titre: "Anton", Impact, sans-serif;
+  --f-texte: "Montserrat", Helvetica, Arial, sans-serif;
+
+  /* Rythme */
+  --pas: 8px;
+  --largeur-max: 1440px;
+}
+
+body {
+margin: 0;
+}
+
+header {
+    background-color: gray;
+    height: 150px;
+}
+
+/* css/verif.css - charge pendant le travail, retire a la livraison */
+/* .verif-on .section-hero { 
+    position: relative;
+        background-color: green;
+        height: calc(100vh - 150px);
+    
+
+}
+
+.verif-on .section-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/hero-coeur-des-femmes2026.png") top center / 1440px auto no-repeat;
+  opacity: .5;
+  pointer-events: none;
+  z-index: 9999;
+} */
+
+.prev-hero--campagne {
+    --hero-red: var(--prev-primary, #e61e26);
+    --hero-cream: var(--prev-accent, #edeca4);
+    --hero-blue: #2f63af;
+    --hero-pink: #f5c6dd;
+    height: calc(100vh - var(--prev-header-h, 162px));
+    height: calc(100svh - var(--prev-header-h, 162px));
+    min-height: 589px;
+    background: var(--hero-red);
+    padding: clamp(48px, 8.1vw, 117px) 0 clamp(52px, 8.6vw, 124px);
+    justify-content: center;
+    align-items: stretch;
+    isolation: isolate;
+    overflow: clip;
+    z-index: 1;
+}
+.prev-hero {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 100px;
+}
